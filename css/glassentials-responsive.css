@@ -1,0 +1,128 @@
+/* ============================================
+   GLASSENTIALS CSS — RESPONSIVE
+   ============================================ */
+
+/* ---- 1280px ---- */
+@media (max-width: 1280px) {
+  .ge-why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ge-story-steps {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ge-story-arrow {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    transform: none;
+    color: var(--ge-border);
+  }
+  .ge-offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- 1024px ---- */
+@media (max-width: 1024px) {
+  .ge-intro-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .ge-cat-divider-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .ge-cat-divider-reverse { direction: ltr; }
+  .ge-bricks-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .ge-shower-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .ge-presence-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .ge-apps-grid { grid-template-columns: repeat(2, 1fr); }
+  .ge-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .ge-stat-item:nth-child(2) { border-right: none; }
+  .ge-stat-item:nth-child(3) { border-top: 1px solid rgba(255,255,255,0.08); }
+  .ge-stat-item:nth-child(4) { border-right: none; border-top: 1px solid rgba(255,255,255,0.08); }
+  .ge-leadership-inner { grid-template-columns: 1fr; gap: 2rem; }
+  /* 3-col grid → 2-col on tablet */
+  .ge-adaptive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .ge-adaptive-grid.gel-masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ge-adaptive-grid .ge-img-item {
+    order: 0 !important;
+  }
+  /* Reduce brand card on tablet */
+  .ge-brand-card { min-width: 130px; height: 72px; }
+}
+
+/* ---- 768px ---- */
+@media (max-width: 768px) {
+  .ge-section { padding: 4.5rem 0; }
+  .ge-section-inner { padding: 0 1.25rem; }
+  .ge-hero-content { padding: 8rem 1.25rem 5rem; }
+  .ge-hero-heading { font-size: clamp(2.25rem, 8vw, 3.5rem); }
+  .ge-hero-actions { flex-direction: column; gap: 0.75rem; }
+  .ge-hero-actions .btn { width: 100%; justify-content: center; }
+  .ge-apps-grid { grid-template-columns: 1fr; }
+  .ge-why-grid {
+    grid-template-columns: 1fr;
+    background: transparent;
+    border: none;
+    gap: 1px;
+    border-radius: 0;
+  }
+  .ge-why-item {
+    border: 1px solid var(--ge-border);
+    border-radius: 8px;
+  }
+  .ge-offerings-grid { grid-template-columns: 1fr; }
+  .ge-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .ge-stats-section { padding: 3rem 1.25rem; }
+  .ge-cat-divider-inner { gap: 2rem; }
+  .ge-brand-statement { padding: 6rem 1.5rem; }
+  .ge-cta-section { padding: 6rem 1.5rem; }
+  .ge-cta-actions { flex-direction: column; gap: 0.75rem; }
+  .ge-cta-actions .btn { width: 100%; justify-content: center; }
+  /* Smaller brand cards on mobile */
+  .ge-brand-card { min-width: 110px; height: 64px; padding: 0.75rem 1.25rem; }
+  .ge-brand-card img { max-width: 90px; max-height: 38px; }
+  /* All grids collapse to 2-col on mobile */
+  .ge-adaptive-grid,
+  .ge-adaptive-grid.gel-masonry {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+    gap: 0.75rem;
+  }
+  .ge-adaptive-grid.gel-two,
+  .ge-adaptive-grid.gel-single {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+  }
+  .ge-shower-grid { direction: ltr; }
+  .ge-product-cat-desc { text-align: left; margin-left: 0; max-width: 100%; }
+  .ge-product-cat-header { flex-direction: column; gap: 0.5rem; }
+
+  /* Lightbox mobile */
+  .ge-lb-prev { left: 0.5rem; }
+  .ge-lb-next { right: 0.5rem; }
+  .ge-lb-prev, .ge-lb-next { width: 40px; height: 40px; font-size: 1.4rem; }
+}
+
+/* ---- 480px ---- */
+@media (max-width: 480px) {
+  .ge-hero-heading { font-size: clamp(1.9rem, 9vw, 2.8rem); }
+  .ge-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .ge-stat-number { font-size: 2.25rem; }
+  .ge-cat-divider-inner { grid-template-columns: 1fr; }
+  .ge-story-steps { gap: 0; }
+  .ge-apps-grid { grid-template-columns: 1fr; }
+  .ge-section-inner { padding: 0 1rem; }
+  .ge-hero-content { padding: 7rem 1rem 4rem; }
+}
+
+/* ---- 390px ---- */
+@media (max-width: 390px) {
+  .ge-hero-heading { font-size: 1.85rem; }
+  .ge-stats-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- 360px ---- */
+@media (max-width: 360px) {
+  .ge-hero-heading { font-size: 1.7rem; }
+}

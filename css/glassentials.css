@@ -1,0 +1,1553 @@
+/* ============================================
+   GLASSENTIALS — PREMIUM BRAND CSS
+   Part of the Mulzon design system
+   ============================================ */
+
+/* ---- Shared GlassEntials Tokens ---- */
+:root {
+  --ge-bg: #F8F7F3;
+  --ge-surface: #FFFFFF;
+  --ge-surface-soft: #F1F0EB;
+  --ge-text: #20221F;
+  --ge-text-soft: #666861;
+  --ge-border: #E3E1DA;
+  --ge-sage: #7C887D;
+  --ge-sage-soft: #E5EAE5;
+  --ge-champagne: #C8B99A;
+  --ge-champagne-soft: #EEE8DC;
+  --ge-charcoal: #292B28;
+  --ge-dark: #1A1C19;
+
+  --ge-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ge-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ge-transition: all 0.4s var(--ge-ease);
+}
+
+/* ---- Page Base ---- */
+.ge-page {
+  background-color: var(--ge-bg);
+}
+
+/* ---- Shared Layout ---- */
+.ge-section {
+  padding: 5rem 0;
+}
+
+.ge-section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.ge-section-header {
+  margin-bottom: 4.5rem;
+}
+
+.ge-section-header .ge-serif-heading {
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Eyebrow ---- */
+.ge-eyebrow {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ge-sage);
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Serif Heading ---- */
+.ge-serif-heading {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--ge-text);
+  margin-bottom: 1.5rem;
+}
+
+.ge-serif-heading em {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ge-sage);
+  font-size: 1.08em;
+}
+
+/* ---- Typography ---- */
+.ge-lead-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--ge-text-soft);
+  margin-bottom: 1.25rem;
+}
+
+.ge-body-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ge-text-soft);
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Buttons ---- */
+.ge-btn-primary {
+  background-color: var(--ge-charcoal);
+  color: #fff;
+  border: 1px solid var(--ge-charcoal);
+}
+.ge-btn-primary:hover {
+  background-color: var(--ge-sage);
+  border-color: var(--ge-sage);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37,37,34,0.12);
+}
+
+.ge-btn-secondary {
+  background-color: transparent;
+  color: var(--ge-text);
+  border: 1px solid var(--ge-border);
+}
+.ge-btn-secondary:hover {
+  border-color: var(--ge-text);
+  transform: translateY(-2px);
+}
+
+.ge-btn-outline-light {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.7);
+  color: #fff;
+}
+.ge-btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.12);
+  border-color: #fff;
+}
+
+.ge-btn-light {
+  background-color: #fff;
+  color: var(--ge-charcoal);
+  border: 1px solid #fff;
+}
+.ge-btn-light:hover {
+  background-color: var(--ge-champagne-soft);
+  border-color: var(--ge-champagne-soft);
+  transform: translateY(-2px);
+}
+
+.ge-arrow {
+  display: inline-block;
+  transition: transform 0.3s var(--ge-ease);
+}
+a:hover .ge-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* ===========================================
+   HERO
+   =========================================== */
+.ge-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ge-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.ge-hero-img-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ge-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  animation: geHeroZoom 16s ease-out forwards;
+}
+
+@keyframes geHeroZoom {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+
+.ge-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(20, 22, 19, 0.72) 0%,
+    rgba(30, 32, 28, 0.48) 60%,
+    rgba(40, 42, 37, 0.3) 100%
+  );
+}
+
+.ge-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10rem 2.5rem 6rem;
+  width: 100%;
+}
+
+.ge-hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.ge-hero-label span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+}
+
+.ge-hero-eyebrow {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ge-champagne);
+  margin-bottom: 1.25rem;
+}
+
+.ge-hero-heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  max-width: 820px;
+}
+
+.ge-hero-heading em {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ge-champagne);
+  font-size: 1.05em;
+}
+
+.ge-hero-sub {
+  display: block;
+  font-size: 0.6em;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: -0.01em;
+  margin-top: 0.4rem;
+}
+
+.ge-hero-lead {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.82);
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.ge-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ge-hero-scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ge-hero-scroll-indicator span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.ge-scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  animation: geScrollPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes geScrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.15); }
+}
+
+/* ===========================================
+   BRAND INTRO
+   =========================================== */
+.ge-intro {
+  background-color: var(--ge-surface);
+}
+
+.ge-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.ge-qualities {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.ge-quality-item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.ge-quality-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--ge-champagne);
+  flex-shrink: 0;
+}
+
+.ge-quality-item span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ge-text);
+}
+
+/* ===========================================
+   STATISTICS
+   =========================================== */
+.ge-stats-section {
+  background-color: var(--ge-charcoal);
+  padding: 4.5rem 0;
+}
+
+.ge-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  divide-x: 1px solid rgba(255,255,255,0.08);
+}
+
+.ge-stat-item {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.ge-stat-item:last-child {
+  border-right: none;
+}
+
+.ge-stat-number {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--ge-champagne);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.ge-stat-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  max-width: 160px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ===========================================
+   WHAT WE DO
+   =========================================== */
+.ge-what-we-do {
+  background-color: var(--ge-bg);
+}
+
+.ge-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background-color: var(--ge-border);
+  border: 1px solid var(--ge-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ge-offering-item {
+  background-color: var(--ge-surface);
+  padding: 2.5rem 2rem;
+  transition: background-color 0.3s var(--ge-ease);
+}
+
+.ge-offering-item:hover {
+  background-color: var(--ge-champagne-soft);
+}
+
+.ge-offering-num {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ge-champagne);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.ge-offering-item h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ge-text);
+  margin-bottom: 0.625rem;
+  letter-spacing: -0.015em;
+}
+
+.ge-offering-item p {
+  font-size: 0.9rem;
+  color: var(--ge-text-soft);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===========================================
+   CATEGORY DIVIDERS (Glass / Mirror intro)
+   =========================================== */
+.ge-category-divider {
+  padding: 6rem 0;
+  background-color: var(--ge-surface-soft);
+  border-top: 1px solid var(--ge-border);
+  border-bottom: 1px solid var(--ge-border);
+}
+
+.ge-cat-divider-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ge-cat-divider-reverse {
+  direction: rtl;
+}
+.ge-cat-divider-reverse > * {
+  direction: ltr;
+}
+
+.ge-cat-num {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ge-champagne);
+  margin-bottom: 1.5rem;
+}
+
+.ge-cat-divider-img {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--ge-border);
+  box-shadow: 0 20px 60px rgba(32,34,31,0.07);
+  aspect-ratio: 4/3;
+}
+
+.ge-cat-divider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ge-ease);
+  display: block;
+}
+
+.ge-cat-divider-img:hover img {
+  transform: scale(1.04);
+}
+
+/* ===========================================
+   PRODUCT GALLERY
+   =========================================== */
+.ge-products-section {
+  background-color: var(--ge-surface);
+}
+
+.ge-products-section--soft {
+  background-color: var(--ge-bg);
+}
+
+.ge-product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* Category block */
+.ge-product-cat {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* Alternating layouts: even -> reverse */
+.ge-product-cat.layout-a {
+  grid-template-columns: 1fr;
+}
+
+.ge-product-cat-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ge-border);
+  margin-bottom: 0.5rem;
+}
+
+.ge-product-cat-num {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--ge-champagne);
+  flex-shrink: 0;
+}
+
+.ge-product-cat-name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ge-text);
+  letter-spacing: -0.02em;
+}
+
+.ge-product-cat-desc {
+  font-size: 0.9rem;
+  color: var(--ge-text-soft);
+  line-height: 1.7;
+  margin-left: auto;
+  max-width: 320px;
+  text-align: right;
+}
+
+/* Variant tabs */
+.ge-variant-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ge-variant-tab {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.875rem;
+  border: 1px solid var(--ge-border);
+  border-radius: 100px;
+  color: var(--ge-text-soft);
+  cursor: pointer;
+  background: var(--ge-surface);
+  transition: var(--ge-transition);
+}
+.ge-variant-tab.active,
+.ge-variant-tab:hover {
+  background: var(--ge-charcoal);
+  color: #fff;
+  border-color: var(--ge-charcoal);
+}
+
+/* ==============================================
+   PRODUCT GALLERY — UNIFORM CATALOGUE GRID
+   All cells same height, images scale inside.
+   No dead whitespace. No cropping.
+   =============================================== */
+
+.ge-adaptive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* 2-image categories */
+.ge-adaptive-grid.gel-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* 1-image categories */
+.ge-adaptive-grid.gel-single {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 260px;
+  max-width: 520px;
+}
+
+/* 4+ images: 4 columns */
+.ge-adaptive-grid.gel-masonry {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ====================================================
+   IMAGE CELL — fixed height, image scales to fit
+   ==================================================== */
+.ge-img-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--ge-surface-soft);
+  /* height is set by grid-auto-rows on parent */
+  height: 100%;
+  width: 100%;
+}
+
+.ge-img-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* preserve full image — no crop, no distortion */
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.5s var(--ge-ease), filter 0.35s ease;
+}
+
+/* Extremely subtle hover */
+.ge-img-item:hover img {
+  transform: scale(1.015);
+  filter: brightness(0.95);
+}
+
+.ge-img-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20,22,19,0.55) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ge-ease);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem;
+}
+
+.ge-img-item:hover .ge-img-item-overlay {
+  opacity: 1;
+}
+
+.ge-img-item-overlay span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Missing image placeholder */
+.ge-img-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  height: 100%;
+  background-color: var(--ge-surface-soft);
+  border-radius: 8px;
+  border: 1px dashed var(--ge-border);
+  color: var(--ge-text-soft);
+  gap: 0.5rem;
+}
+
+.ge-img-placeholder svg {
+  width: 28px;
+  height: 28px;
+  opacity: 0.4;
+}
+
+.ge-img-placeholder span {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}
+
+/* ===========================================
+   GLASS BRICKS
+   =========================================== */
+.ge-bricks-section {
+  background-color: var(--ge-surface-soft);
+  border-top: 1px solid var(--ge-border);
+}
+
+.ge-bricks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ge-bricks-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.ge-bricks-types span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.875rem;
+  background-color: var(--ge-surface);
+  border: 1px solid var(--ge-border);
+  border-radius: 100px;
+  color: var(--ge-text-soft);
+  letter-spacing: 0.04em;
+}
+
+.ge-bricks-visual {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--ge-border);
+  box-shadow: 0 20px 60px rgba(32,34,31,0.07);
+  aspect-ratio: 4/3;
+}
+
+.ge-bricks-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s var(--ge-ease);
+}
+
+.ge-bricks-visual:hover img {
+  transform: scale(1.04);
+}
+
+/* ===========================================
+   SHOWER SOLUTIONS
+   =========================================== */
+.ge-shower-section {
+  background-color: var(--ge-surface);
+  border-top: 1px solid var(--ge-border);
+}
+
+.ge-shower-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ge-shower-img {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--ge-border);
+  box-shadow: 0 20px 60px rgba(32,34,31,0.07);
+  aspect-ratio: 3/4;
+}
+
+.ge-shower-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s var(--ge-ease);
+}
+
+.ge-shower-img:hover img {
+  transform: scale(1.04);
+}
+
+.ge-shower-list {
+  margin: 1.75rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.ge-shower-item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-size: 0.9375rem;
+  color: var(--ge-text);
+}
+
+.ge-shower-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--ge-sage);
+  flex-shrink: 0;
+}
+
+/* ===========================================
+   APPLICATIONS
+   =========================================== */
+.ge-applications {
+  background-color: var(--ge-bg);
+}
+
+.ge-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.ge-app-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ge-app-img {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--ge-border);
+}
+
+.ge-app-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s var(--ge-ease);
+}
+
+.ge-app-card:hover .ge-app-img img {
+  transform: scale(1.06);
+}
+
+.ge-app-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20,22,19,0.75) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ge-ease);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.ge-app-card:hover .ge-app-overlay {
+  opacity: 1;
+}
+
+.ge-app-overlay p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.ge-app-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ge-app-num {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ge-champagne);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.ge-app-label h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ge-text);
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+/* ===========================================
+   STORY SECTION
+   =========================================== */
+.ge-story-section {
+  background-color: var(--ge-surface);
+  border-top: 1px solid var(--ge-border);
+}
+
+.ge-story-header {
+  margin-bottom: 4rem;
+}
+
+.ge-story-steps {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ge-story-step {
+  background-color: var(--ge-surface-soft);
+  border: 1px solid var(--ge-border);
+  border-radius: 10px;
+  padding: 2rem 1.75rem;
+  transition: var(--ge-transition);
+}
+
+.ge-story-step:hover {
+  border-color: var(--ge-champagne);
+  box-shadow: 0 8px 24px rgba(200,185,154,0.15);
+  transform: translateY(-3px);
+}
+
+.ge-story-step--accent {
+  background-color: var(--ge-charcoal);
+  border-color: var(--ge-charcoal);
+}
+
+.ge-story-step--accent h3,
+.ge-story-step--accent p,
+.ge-story-step--accent .ge-story-num {
+  color: #fff;
+}
+
+.ge-story-step--accent .ge-story-num {
+  color: var(--ge-champagne);
+}
+
+.ge-story-num {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ge-champagne);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.875rem;
+}
+
+.ge-story-step h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ge-text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.ge-story-step p {
+  font-size: 0.84rem;
+  color: var(--ge-text-soft);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.ge-story-arrow {
+  font-size: 1.5rem;
+  color: var(--ge-border);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ===========================================
+   WHY GLASSENTIALS
+   =========================================== */
+.ge-why-section {
+  background-color: var(--ge-bg);
+}
+
+.ge-why-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5px;
+  background-color: var(--ge-border);
+  border: 1px solid var(--ge-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ge-why-item {
+  background-color: var(--ge-surface);
+  padding: 2.5rem 1.75rem;
+  transition: background-color 0.3s var(--ge-ease);
+}
+
+.ge-why-item:hover {
+  background-color: var(--ge-champagne-soft);
+}
+
+.ge-why-num {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ge-champagne);
+  letter-spacing: 0.12em;
+  margin-bottom: 1.25rem;
+}
+
+.ge-why-item h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ge-text);
+  margin-bottom: 0.625rem;
+  letter-spacing: -0.015em;
+}
+
+.ge-why-item p {
+  font-size: 0.875rem;
+  color: var(--ge-text-soft);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===========================================
+   BRAND ASSOCIATIONS
+   =========================================== */
+/* ===========================================
+   BRAND ASSOCIATIONS — MARQUEE
+   =========================================== */
+.ge-brands-section {
+  background-color: var(--ge-bg);
+  padding: 5rem 0 4.5rem;
+  overflow: hidden;
+  border-top: 1px solid var(--ge-border);
+  border-bottom: 1px solid var(--ge-border);
+}
+
+.ge-brands-header {
+  text-align: center;
+  padding: 0 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.ge-brands-header .ge-eyebrow {
+  color: var(--ge-sage);
+}
+
+.ge-brands-heading {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  letter-spacing: -0.03em;
+  color: var(--ge-text);
+  margin: 0.75rem 0 1rem;
+  line-height: 1.2;
+}
+
+.ge-brands-heading em {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ge-sage);
+  font-size: 1.08em;
+}
+
+.ge-brands-note {
+  font-size: 0.9rem;
+  color: var(--ge-text-soft);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Marquee wrapper — edge fade mask */
+.ge-marquee-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+.ge-marquee-wrapper::before,
+.ge-marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 140px;
+  z-index: 2;
+  pointer-events: none;
+}
+.ge-marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--ge-bg), transparent);
+}
+.ge-marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--ge-bg), transparent);
+}
+
+/* Marquee track */
+.ge-marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  will-change: transform;
+}
+
+@keyframes marquee-ltr {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-rtl {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.ge-marquee-ltr {
+  animation: marquee-ltr 32s linear infinite;
+}
+.ge-marquee-rtl {
+  animation: marquee-rtl 36s linear infinite;
+}
+
+/* Pause on hover */
+.ge-marquee-wrapper:hover .ge-marquee-track {
+  animation-play-state: paused;
+}
+
+/* Individual brand card */
+.ge-brand-card {
+  flex-shrink: 0;
+  background: var(--ge-surface);
+  border: 1px solid var(--ge-border);
+  border-radius: 10px;
+  padding: 1rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  min-width: 160px;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.ge-brand-card:hover {
+  border-color: rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  transform: translateY(-2px);
+}
+
+.ge-brand-card img {
+  max-width: 120px;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply; /* Magically removes white backgrounds on JPGs */
+  opacity: 0.85;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.ge-brand-card:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ===========================================
+   PAN-INDIA PRESENCE
+   =========================================== */
+.ge-presence-section {
+  background-color: var(--ge-surface);
+  border-top: 1px solid var(--ge-border);
+}
+
+.ge-presence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ge-cities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+
+.ge-city {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.875rem;
+  background-color: var(--ge-surface-soft);
+  border: 1px solid var(--ge-border);
+  border-radius: 100px;
+  color: var(--ge-text-soft);
+  letter-spacing: 0.04em;
+}
+
+/* India Map SVG */
+.ge-india-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ge-map-svg {
+  width: 100%;
+  max-width: 380px;
+  filter: drop-shadow(0 8px 24px rgba(32,34,31,0.06));
+}
+
+.ge-map-land {
+  fill: var(--ge-surface-soft);
+  stroke: var(--ge-border);
+  stroke-width: 1.5;
+  transition: fill 0.3s ease;
+}
+
+.ge-map-dot {
+  fill: var(--ge-champagne);
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: r 0.3s ease, fill 0.3s ease;
+}
+
+.ge-map-dot:hover {
+  fill: var(--ge-sage);
+  r: 7;
+}
+
+.ge-map-tooltip {
+  font-family: 'Manrope', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--ge-text);
+  letter-spacing: 0.06em;
+  transition: opacity 0.3s ease;
+}
+
+/* ===========================================
+   BRAND STATEMENT (DARK)
+   =========================================== */
+.ge-brand-statement {
+  position: relative;
+  padding: 9rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 540px;
+}
+
+.ge-statement-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.ge-statement-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.1s linear;
+}
+
+.ge-statement-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 22, 19, 0.78);
+}
+
+.ge-statement-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+
+.ge-statement-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.ge-statement-text em {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ge-champagne);
+  font-size: 1.05em;
+}
+
+.ge-statement-attr {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+}
+
+/* ===========================================
+   LEADERSHIP
+   =========================================== */
+.ge-leadership {
+  background-color: var(--ge-surface-soft);
+  border-top: 1px solid var(--ge-border);
+}
+
+.ge-leadership-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ge-leadership-role {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ge-sage);
+  margin-bottom: 1.25rem;
+}
+
+.ge-leadership-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ge-champagne-soft), var(--ge-sage-soft));
+  border: 2px solid var(--ge-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ge-leadership-placeholder span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ge-sage);
+}
+
+/* ===========================================
+   CTA SECTION
+   =========================================== */
+.ge-cta-section {
+  position: relative;
+  padding: 9rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 540px;
+}
+
+.ge-cta-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.ge-cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ge-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26,28,25,0.85) 0%,
+    rgba(41,43,40,0.7) 100%
+  );
+}
+
+.ge-cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+}
+
+.ge-cta-heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+.ge-cta-heading em {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ge-champagne);
+}
+
+.ge-cta-lead {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.ge-cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===========================================
+   LIGHTBOX
+   =========================================== */
+.ge-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(10,11,10,0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s var(--ge-ease);
+}
+
+.ge-lightbox:not([hidden]) {
+  opacity: 1;
+}
+
+.ge-lightbox[hidden] {
+  display: none;
+}
+
+.ge-lb-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.ge-lb-img {
+  width: auto;
+  height: auto;
+  max-width: 92vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  animation: geLbIn 0.3s var(--ge-ease-out);
+}
+
+@keyframes geLbIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.ge-lb-counter {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.45);
+}
+
+.ge-lb-close,
+.ge-lb-prev,
+.ge-lb-next {
+  position: fixed;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.ge-lb-close:hover,
+.ge-lb-prev:hover,
+.ge-lb-next:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.ge-lb-close {
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+}
+
+.ge-lb-prev {
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  font-size: 1.75rem;
+}
+
+.ge-lb-next {
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  font-size: 1.75rem;
+}
+
+/* ===========================================
+   GLASSENTIALS-SPECIFIC ANIMATION STAGGER
+   =========================================== */
+.ge-product-cat .reveal:nth-child(1) { transition-delay: 0.05s; }
+.ge-product-cat .reveal:nth-child(2) { transition-delay: 0.15s; }
+.ge-product-cat .reveal:nth-child(3) { transition-delay: 0.25s; }
+
+.ge-why-grid .ge-why-item:nth-child(1) { transition-delay: 0.0s; }
+.ge-why-grid .ge-why-item:nth-child(2) { transition-delay: 0.08s; }
+.ge-why-grid .ge-why-item:nth-child(3) { transition-delay: 0.16s; }
+.ge-why-grid .ge-why-item:nth-child(4) { transition-delay: 0.24s; }
+.ge-why-grid .ge-why-item:nth-child(5) { transition-delay: 0.32s; }
