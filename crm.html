@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#FAF9F6">
-  <title>GlassEntials CRM | Business Management Software — Mulzon</title>
-  <meta name="description" content="GlassEntials CRM by Mulzon — a clean, fast CRM for managing customers, quotations, projects and business workflows. Built for glass, interiors and any business.">
+  <title>GlassEntials CRM | Business CRM &amp; SaaS Platform | Mulzon</title>
+  <meta name="description" content="GlassEntials CRM connects leads, customers, projects, quotations, finance, activities and business workflows in one connected workspace. A Mulzon product.">
   <link rel="canonical" href="https://mulzon.tech/crm.html">
+  <meta property="og:title" content="GlassEntials CRM | Mulzon">
+  <meta property="og:description" content="One CRM. Every part of your business. Manage leads, customers, projects, quotations and finance in one connected workspace.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mulzon.tech/crm.html">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Georgia:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/glassentials-crm.css">
 </head>
 <body id="top">
-  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Skip to content</a>
+  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:0;z-index:999;padding:0.5rem 1rem;background:var(--text-main);color:#fff;font-family:var(--font-heading);">Skip to content</a>
   <div class="scroll-progress" id="scrollProgress"></div>
 
+  <!-- ======== HEADER ======== -->
   <header class="site-header" id="siteHeader">
     <div class="nav-shell">
-      <a class="logo" href="index.html">MULZON<span>®</span></a>
+      <a class="logo" href="index.html" aria-label="Mulzon Home">MULZON<span>®</span></a>
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
@@ -33,73 +39,777 @@
         <a href="hrms.html">HRMS</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a class="nav-cta" href="contact.html">Let's talk →</a>
+      <a class="nav-cta" href="https://glassentials.in" target="_blank" rel="noopener">Open CRM ↗</a>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- HERO -->
-    <div class="brand-hero section-inner">
-      <div class="brand-hero-copy reveal">
-        <span class="eyebrow">TECHNOLOGY 03</span>
-        <h1>GlassEntials <em>CRM</em></h1>
-        <p class="lead">A clean, fast CRM designed for managing customers, quotations, projects and business workflows. Built for the glass and interiors industry — powerful enough for any business.</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:2rem;">
-          <a class="btn btn-primary" href="contact.html">Request a Demo</a>
-          <a class="btn btn-outline" href="https://glassentials.in" target="_blank" rel="noopener">Try CRM</a>
+    <!-- ======== HERO ======== -->
+    <section class="crm-hero" id="crm-hero">
+      <div class="crm-hero-inner">
+        <div class="reveal">
+          <div class="crm-hero-tag">
+            <span></span>
+            A MULZON PRODUCT
+          </div>
+          <h1 class="crm-hero-h1">One CRM.<br><em>Every part of your business.</em></h1>
+          <p class="crm-hero-sub">From leads and customers to projects, quotations, payments and team activity — GlassEntials CRM brings your business operations into one connected workspace.</p>
+          <div class="crm-hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://glassentials.in" target="_blank" rel="noopener">Open GlassEntials CRM ↗</a>
+            <a class="btn btn-outline btn-lg" href="contact.html">Request a Demo</a>
+          </div>
         </div>
-      </div>
-      <div class="brand-hero-img img-wrap reveal">
-         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&auto=format&fit=crop&q=80" alt="Team collaborating" loading="eager">
-      </div>
-    </div>
 
-    <section class="section" style="padding-top: 0;">
-      <div class="section-inner">
-        <div class="brand-stats reveal">
-          <div class="brand-stat"><strong>50+</strong><span>Businesses Using</span></div>
-          <div class="brand-stat"><strong>10K+</strong><span>Quotations Generated</span></div>
-          <div class="brand-stat"><strong>99%</strong><span>Uptime</span></div>
-          <div class="brand-stat"><strong>24/7</strong><span>Support</span></div>
+        <!-- Dashboard Frame -->
+        <div class="crm-dashboard-frame reveal" style="transition-delay:0.15s">
+          <div class="crm-browser-chrome">
+            <div class="crm-browser-dot"></div>
+            <div class="crm-browser-dot"></div>
+            <div class="crm-browser-dot"></div>
+            <div class="crm-browser-url">glassentials.in — Dashboard</div>
+          </div>
+          <div class="crm-dashboard-screen">
+            <img src="assets/images/crm_dashboard.jpg" alt="GlassEntials CRM Dashboard — Leads, Customers, Projects and Quotations overview" loading="eager" width="900">
+          </div>
+          <div class="crm-frame-badge">
+            <div class="crm-frame-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="crm-frame-badge-text">
+              <strong>Always up to date</strong>
+              <span>Real-time business data</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft">
-      <div class="section-inner">
-        <div class="section-header text-center">
-          <span class="eyebrow">FEATURES</span>
-          <h2>Everything your business <em>needs</em>.</h2>
-          <p class="lead" style="margin: 0 auto;">From first contact to final invoice — GlassEntials CRM covers the complete customer journey in one connected platform.</p>
+    <!-- ======== STATS STRIP ======== -->
+    <div class="crm-stats-strip">
+      <div class="crm-stats-inner">
+        <div class="crm-stat reveal">
+          <span class="crm-stat-num" data-count="50" data-suffix="+">50+</span>
+          <span class="crm-stat-label">Businesses Using</span>
         </div>
-        <div class="services-grid">
-          <div class="card service-card reveal">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
-            <h3>Customer Management</h3>
-            <p>Maintain a complete database of customers, contacts and communication history in one organised place.</p>
+        <div class="crm-stat reveal" style="transition-delay:0.1s">
+          <span class="crm-stat-num" data-count="10000" data-suffix="+">10,000+</span>
+          <span class="crm-stat-label">Quotations Generated</span>
+        </div>
+        <div class="crm-stat reveal" style="transition-delay:0.2s">
+          <span class="crm-stat-num">8+</span>
+          <span class="crm-stat-label">Business Modules</span>
+        </div>
+        <div class="crm-stat reveal" style="transition-delay:0.3s">
+          <span class="crm-stat-num">1</span>
+          <span class="crm-stat-label">Connected Workspace</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== INTRO — BUILT AROUND HOW YOUR BUSINESS WORKS ======== -->
+    <section class="crm-intro-section">
+      <div class="crm-intro-inner">
+        <div class="crm-intro-left reveal">
+          <span class="eyebrow">THE PROBLEM</span>
+          <h2>Built around the way your business <em>actually works.</em></h2>
+          <p>Business information is typically scattered across spreadsheets, emails, messaging apps, documents and disconnected tools. Following up means digging through inboxes. Finding a customer record means switching between five different places.</p>
+          <p>GlassEntials CRM connects these workflows. Your leads, customers, projects, quotations and finances — structured, connected, and visible from one place.</p>
+          <blockquote style="margin-top:2rem;padding-left:1.5rem;border-left:3px solid var(--crm-blue);font-family:Georgia,serif;font-style:italic;color:var(--text-muted);font-size:1.05rem;line-height:1.7;">
+            "Your business already has the data. GlassEntials CRM gives it structure."
+          </blockquote>
+        </div>
+
+        <div class="crm-scattered-tools reveal" style="transition-delay:0.15s">
+          <div class="crm-tool-item">
+            <div class="crm-tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <span class="crm-tool-name">Spreadsheets</span>
+            <span class="crm-tool-status">Scattered</span>
           </div>
-          <div class="card service-card reveal">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-            <h3>Quotation Builder</h3>
-            <p>Create professional quotations quickly with product catalogue integration and auto-calculation of measurements.</p>
+          <div class="crm-tool-item">
+            <div class="crm-tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span class="crm-tool-name">Email threads</span>
+            <span class="crm-tool-status">Buried</span>
           </div>
-          <div class="card service-card reveal">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-            <h3>Lead Tracking</h3>
-            <p>Track every lead from enquiry to closure with a visual pipeline — never lose a sales opportunity again.</p>
+          <div class="crm-tool-item">
+            <div class="crm-tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span class="crm-tool-name">Messaging apps</span>
+            <span class="crm-tool-status">Lost</span>
           </div>
-          <div class="card service-card reveal">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-            <h3>Project Tracking</h3>
-            <p>Manage installation projects with milestones, site visits and completion tracking from order to delivery.</p>
+          <div class="crm-tool-item connected">
+            <div class="crm-tool-icon" style="background:var(--crm-blue-soft);color:var(--crm-blue);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <span class="crm-tool-name">GlassEntials CRM</span>
+            <span class="crm-tool-status">Connected</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== BUSINESS FLOW ======== -->
+    <section class="crm-flow-section" id="crm-flow">
+      <div class="crm-flow-inner">
+        <div class="crm-flow-header reveal">
+          <span class="eyebrow">BUSINESS JOURNEY</span>
+          <h2>From first contact to <em>completed business.</em></h2>
+          <p>Every stage of your business journey — connected in one system. Data doesn't live in isolated modules. It flows.</p>
+        </div>
+
+        <div class="crm-flow-track reveal" style="transition-delay:0.2s" id="crmFlowTrack">
+          <div class="crm-flow-node" data-step="0">
+            <div class="crm-flow-node-connector" id="conn-0"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span class="crm-flow-label">Lead</span>
+            <span class="crm-flow-sublabel">Enquiry captured</span>
+          </div>
+          <div class="crm-flow-node" data-step="1">
+            <div class="crm-flow-node-connector" id="conn-1"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="crm-flow-label">Customer</span>
+            <span class="crm-flow-sublabel">Lead converted</span>
+          </div>
+          <div class="crm-flow-node" data-step="2">
+            <div class="crm-flow-node-connector" id="conn-2"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <span class="crm-flow-label">Project</span>
+            <span class="crm-flow-sublabel">Work begins</span>
+          </div>
+          <div class="crm-flow-node" data-step="3">
+            <div class="crm-flow-node-connector" id="conn-3"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <span class="crm-flow-label">Tasks</span>
+            <span class="crm-flow-sublabel">Team assigned</span>
+          </div>
+          <div class="crm-flow-node" data-step="4">
+            <div class="crm-flow-node-connector" id="conn-4"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <span class="crm-flow-label">Quotation</span>
+            <span class="crm-flow-sublabel">Proposal sent</span>
+          </div>
+          <div class="crm-flow-node" data-step="5">
+            <div class="crm-flow-node-connector" id="conn-5"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <span class="crm-flow-label">Invoice</span>
+            <span class="crm-flow-sublabel">Billed</span>
+          </div>
+          <div class="crm-flow-node" data-step="6">
+            <div class="crm-flow-node-connector" id="conn-6"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <span class="crm-flow-label">Payment</span>
+            <span class="crm-flow-sublabel">Collected</span>
+          </div>
+          <div class="crm-flow-node" data-step="7">
+            <div class="crm-flow-node-connector"></div>
+            <div class="crm-flow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="crm-flow-label">Record</span>
+            <span class="crm-flow-sublabel">Business data</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== LEAD MANAGEMENT ======== -->
+    <section class="crm-feature-section">
+      <div class="crm-feature-inner">
+        <div class="crm-feature-text reveal">
+          <span class="crm-section-tag">01 — LEAD MANAGEMENT</span>
+          <h2>Turn leads into <em>organized opportunities.</em></h2>
+          <p>Every enquiry your business receives deserves to be tracked, assigned, and followed through. GlassEntials CRM gives each lead a place, an owner, and a history.</p>
+          <p>No more sticky notes, WhatsApp messages or scattered Excel sheets. Leads come in, get captured, and move through your process.</p>
+          <ul class="crm-feature-list">
+            <li>Create and capture leads from any source</li>
+            <li>Assign leads to team members</li>
+            <li>Track lead status and follow-up history</li>
+            <li>Log calls, activities and communications</li>
+            <li>Convert qualified leads into customers</li>
+          </ul>
+        </div>
+        <div class="crm-screen-wrap reveal" style="transition-delay:0.15s">
+          <img src="assets/images/crm_dashboard.jpg" alt="GlassEntials CRM Lead Management interface" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CUSTOMER & CONTACT MANAGEMENT ======== -->
+    <section class="crm-feature-section soft-bg">
+      <div class="crm-feature-inner reverse">
+        <div class="crm-feature-text reveal">
+          <span class="crm-section-tag">02 — CUSTOMER MANAGEMENT</span>
+          <h2>Know the customer <em>behind the record.</em></h2>
+          <p>A customer is more than a name in a list. GlassEntials CRM connects every customer to their contacts, projects, quotations, and activity history — so your team always has the full picture before a meeting or a call.</p>
+          <ul class="crm-feature-list">
+            <li>Complete customer profiles with contact details</li>
+            <li>Multiple contacts per customer</li>
+            <li>Full activity and communication history</li>
+            <li>Connected projects and quotations</li>
+            <li>Business relationship overview at a glance</li>
+          </ul>
+        </div>
+        <div class="crm-relation-tree reveal" style="transition-delay:0.15s">
+          <div class="crm-relation-root">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Customer Record
+          </div>
+          <div class="crm-relation-children">
+            <div class="crm-relation-child">
+              <div class="crm-relation-child-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              Contacts
+            </div>
+            <div class="crm-relation-child">
+              <div class="crm-relation-child-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              Projects
+            </div>
+            <div class="crm-relation-child">
+              <div class="crm-relation-child-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              Quotations
+            </div>
+            <div class="crm-relation-child">
+              <div class="crm-relation-child-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              Activities &amp; History
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECT MANAGEMENT ======== -->
+    <section class="crm-feature-section">
+      <div class="crm-feature-inner">
+        <div class="crm-feature-text reveal">
+          <span class="crm-section-tag">03 — PROJECT MANAGEMENT</span>
+          <h2>Keep every project <em>moving.</em></h2>
+          <p>Projects connect customers, tasks, team members, and business activity. GlassEntials CRM gives each project its own connected workspace — where status, tasks, and history are always visible.</p>
+          <ul class="crm-feature-list">
+            <li>Create and track projects linked to customers</li>
+            <li>Assign team members and responsibilities</li>
+            <li>Track project status and progress</li>
+            <li>Log activities and site visits</li>
+            <li>Connect projects to quotations and invoices</li>
+          </ul>
+        </div>
+        <div class="crm-screen-wrap reveal" style="transition-delay:0.15s">
+          <img src="assets/images/crm_dashboard.jpg" alt="GlassEntials CRM Project Tracking interface" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TASKS & ACTIVITIES ======== -->
+    <section class="crm-activity-section">
+      <div class="crm-activity-inner">
+        <div class="crm-feature-text reveal">
+          <span class="crm-section-tag">04 — TASKS &amp; ACTIVITIES</span>
+          <h2>Know what needs to <em>happen next.</em></h2>
+          <p>A CRM is only useful if the team uses it every day. GlassEntials CRM brings tasks, follow-ups, calls and activities into a structured daily workflow — so nothing gets forgotten.</p>
+          <p>Every customer conversation, every project update, every follow-up reminder lives in the system — not in someone's memory or inbox.</p>
+          <ul class="crm-feature-list">
+            <li>Create tasks and assign to team members</li>
+            <li>Log calls and follow-up activities</li>
+            <li>Track activity history on customers and projects</li>
+            <li>Receive reminders for pending follow-ups</li>
+          </ul>
+        </div>
+
+        <div class="crm-timeline reveal" style="transition-delay:0.15s">
+          <div class="crm-timeline-item active">
+            <div class="crm-timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="crm-timeline-time">09:30</div>
+              <div class="crm-timeline-title">Follow up with Raj Interiors</div>
+              <div class="crm-timeline-desc">Quotation #GEC-0124 — pending approval since Tuesday</div>
+            </div>
+          </div>
+          <div class="crm-timeline-item active">
+            <div class="crm-timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <div class="crm-timeline-time">11:00</div>
+              <div class="crm-timeline-title">Site visit — Sunshine Mall Project</div>
+              <div class="crm-timeline-desc">Glass installation progress review with site team</div>
+            </div>
+          </div>
+          <div class="crm-timeline-item">
+            <div class="crm-timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div>
+              <div class="crm-timeline-time">14:30</div>
+              <div class="crm-timeline-title">Prepare quotation — Hyatt Lobby</div>
+              <div class="crm-timeline-desc">Architectural glass specification — 3 products, GST inclusive</div>
+            </div>
+          </div>
+          <div class="crm-timeline-item">
+            <div class="crm-timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <div class="crm-timeline-time">16:00</div>
+              <div class="crm-timeline-title">Team check-in</div>
+              <div class="crm-timeline-desc">Review open tasks and pending project updates</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== QUOTATION MANAGEMENT ======== -->
+    <section class="crm-quotation-section" id="crm-quotation">
+      <div class="crm-quotation-inner">
+        <div class="crm-quotation-header reveal">
+          <span class="eyebrow">05 — QUOTATION MANAGEMENT</span>
+          <h2>Quotations that are ready <em>for business.</em></h2>
+          <p>GlassEntials CRM includes a complete quotation workflow — from creating a professional document to tracking its status, sending it to customers and converting it into an invoice.</p>
+        </div>
+
+        <div class="crm-quotation-grid">
+          <!-- Quotation Document Preview -->
+          <div class="crm-quote-doc reveal">
+            <div class="crm-quote-doc-header">
+              <div class="crm-quote-doc-brand">
+                GlassEntials
+                <small>Glass &amp; Mirror Solutions</small>
+              </div>
+              <div class="crm-quote-doc-num">
+                Quotation
+                <strong>#GEC-0158</strong>
+              </div>
+            </div>
+            <div class="crm-quote-doc-body">
+              <div class="crm-quote-doc-meta">
+                <div class="crm-quote-meta-block">
+                  <label>Customer</label>
+                  <p>Raj Interiors Pvt. Ltd.</p>
+                </div>
+                <div class="crm-quote-meta-block">
+                  <label>Project</label>
+                  <p>Sunshine Mall — Lobby</p>
+                </div>
+                <div class="crm-quote-meta-block">
+                  <label>Date</label>
+                  <p>03 Oct 2026</p>
+                </div>
+                <div class="crm-quote-meta-block">
+                  <label>Valid Until</label>
+                  <p>17 Oct 2026</p>
+                </div>
+              </div>
+
+              <table class="crm-quote-items">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Description</th>
+                    <th>Qty</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Architectural Toughened Glass 12mm</td>
+                    <td>45 sqft</td>
+                    <td>₹380</td>
+                    <td>₹17,100</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Mirror Wall Panel — Silver</td>
+                    <td>20 sqft</td>
+                    <td>₹290</td>
+                    <td>₹5,800</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Installation &amp; Labour</td>
+                    <td>1 visit</td>
+                    <td>₹3,500</td>
+                    <td>₹3,500</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="crm-quote-calc">
+                <div class="crm-quote-calc-row">
+                  <span>Subtotal</span>
+                  <span>₹26,400</span>
+                </div>
+                <div class="crm-quote-calc-row">
+                  <span>Discount (5%)</span>
+                  <span>− ₹1,320</span>
+                </div>
+                <div class="crm-quote-calc-row">
+                  <span>CGST @9%</span>
+                  <span>₹2,259</span>
+                </div>
+                <div class="crm-quote-calc-row">
+                  <span>SGST @9%</span>
+                  <span>₹2,259</span>
+                </div>
+                <div class="crm-quote-calc-row total">
+                  <span>Total Amount</span>
+                  <span>₹29,598</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features list -->
+          <div class="crm-quote-features reveal" style="transition-delay:0.15s">
+            <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:1.5rem;letter-spacing:-0.02em;">Everything in a quotation<br>your business actually needs.</h3>
+
+            <div class="crm-quote-feature-item">
+              <div class="crm-quote-feature-num">1</div>
+              <div>
+                <div class="crm-quote-feature-title">Auto-numbered &amp; dated</div>
+                <div class="crm-quote-feature-desc">Sequential quotation numbers generated automatically.</div>
+              </div>
+            </div>
+            <div class="crm-quote-feature-item">
+              <div class="crm-quote-feature-num">2</div>
+              <div>
+                <div class="crm-quote-feature-title">GST — CGST / SGST / IGST</div>
+                <div class="crm-quote-feature-desc">Tax calculated and separated correctly based on transaction type.</div>
+              </div>
+            </div>
+            <div class="crm-quote-feature-item">
+              <div class="crm-quote-feature-num">3</div>
+              <div>
+                <div class="crm-quote-feature-title">Discounts &amp; additional charges</div>
+                <div class="crm-quote-feature-desc">Apply product-level or total discounts and extra charges.</div>
+              </div>
+            </div>
+            <div class="crm-quote-feature-item">
+              <div class="crm-quote-feature-num">4</div>
+              <div>
+                <div class="crm-quote-feature-title">PDF generation</div>
+                <div class="crm-quote-feature-desc">Generate professional PDFs to send directly to customers.</div>
+              </div>
+            </div>
+            <div class="crm-quote-feature-item">
+              <div class="crm-quote-feature-num">5</div>
+              <div>
+                <div class="crm-quote-feature-title">Customer &amp; project linked</div>
+                <div class="crm-quote-feature-desc">Each quotation is connected to a customer, contact or project.</div>
+              </div>
+            </div>
+            <div class="crm-quote-feature-item">
+              <div class="crm-quote-feature-num">6</div>
+              <div>
+                <div class="crm-quote-feature-title">Terms &amp; signature support</div>
+                <div class="crm-quote-feature-desc">Add custom terms, conditions and signature fields.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GST Breakdown Strip -->
+        <div class="crm-gst-strip reveal">
+          <div class="crm-gst-item">
+            <div class="crm-gst-item-label">Line Items</div>
+            <div class="crm-gst-item-value">Products + Services</div>
+          </div>
+          <div class="crm-gst-item">
+            <div class="crm-gst-item-label">Discount</div>
+            <div class="crm-gst-item-value">Applied</div>
+          </div>
+          <div class="crm-gst-item">
+            <div class="crm-gst-item-label">GST Type</div>
+            <div class="crm-gst-item-value">CGST / SGST / IGST</div>
+          </div>
+          <div class="crm-gst-item highlight">
+            <div class="crm-gst-item-label">Total Amount</div>
+            <div class="crm-gst-item-value">Auto Calculated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== AI COPILOT ======== -->
+    <section class="crm-ai-section" id="crm-ai">
+      <div class="crm-ai-inner">
+        <div class="crm-ai-header reveal">
+          <span class="eyebrow">AI COPILOT</span>
+          <h2>Ask your <em>CRM.</em></h2>
+          <p>The AI layer in GlassEntials CRM lets your team retrieve structured business information using natural language. It's an interface over your data — not a replacement for the system.</p>
+        </div>
+
+        <div class="crm-chat-ui reveal" style="transition-delay:0.1s">
+          <div class="crm-chat-header">
+            <div class="crm-chat-header-dot"></div>
+            <span class="crm-chat-header-title">GlassEntials CRM — AI Copilot</span>
+            <span class="crm-chat-header-sub">Your business data, in plain language</span>
+          </div>
+          <div class="crm-chat-body">
+            <div class="crm-chat-msg user">
+              <div class="crm-chat-avatar">R</div>
+              <div class="crm-chat-bubble">How many leads do we have this month?</div>
+            </div>
+            <div class="crm-chat-msg ai">
+              <div class="crm-chat-avatar">AI</div>
+              <div>
+                <div class="crm-chat-bubble">
+                  You have <strong>23 leads</strong> this month. Here's a breakdown:
+                  <div class="crm-chat-data-card">
+                    <div class="crm-chat-data-card-header">Lead Status — October 2026</div>
+                    <div class="crm-chat-data-row"><span>New</span><span>8</span></div>
+                    <div class="crm-chat-data-row"><span>In Progress</span><span>11</span></div>
+                    <div class="crm-chat-data-row"><span>Converted</span><span>4</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="crm-chat-msg user">
+              <div class="crm-chat-avatar">R</div>
+              <div class="crm-chat-bubble">Show me pending quotations above ₹50,000</div>
+            </div>
+            <div class="crm-chat-msg ai">
+              <div class="crm-chat-avatar">AI</div>
+              <div>
+                <div class="crm-chat-bubble">
+                  Found <strong>3 pending quotations</strong> above ₹50,000:
+                  <div class="crm-chat-data-card">
+                    <div class="crm-chat-data-card-header">Pending Quotations</div>
+                    <div class="crm-chat-data-row"><span>GEC-0155 — Hyatt Lobby</span><span>₹82,400</span></div>
+                    <div class="crm-chat-data-row"><span>GEC-0151 — Phoenix Mall</span><span>₹1,24,000</span></div>
+                    <div class="crm-chat-data-row"><span>GEC-0148 — Levi's Store</span><span>₹61,200</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CRM ARCHITECTURE ======== -->
+    <section class="crm-arch-section">
+      <div class="crm-arch-inner">
+        <div class="crm-arch-header reveal">
+          <span class="eyebrow">SYSTEM ARCHITECTURE</span>
+          <h2>Built for multiple businesses. <em>Designed for separation.</em></h2>
+          <p style="color:var(--text-muted);max-width:500px;margin:0 auto;line-height:1.8;">Each organization operates in its own workspace. Data is separated at the tenant level — your business information stays within your account.</p>
+        </div>
+
+        <div class="crm-arch-diagram reveal" style="transition-delay:0.1s">
+          <div class="crm-arch-user">
+            <div class="crm-arch-user-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Your Organization &amp; Team
+            </div>
+          </div>
+          <div class="crm-arch-arrow">↓</div>
+          <div class="crm-arch-modules">
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Leads</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Customers</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Projects</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Quotations</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Finance</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Tasks</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="crm-arch-module-name">Activities</div>
+            </div>
+            <div class="crm-arch-module">
+              <div class="crm-arch-module-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <div class="crm-arch-module-name">AI Copilot</div>
+            </div>
+          </div>
+          <div class="crm-arch-arrow">↓</div>
+          <div class="crm-arch-db">
+            <div class="crm-arch-db-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Secure Database · Tenant-isolated data
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TECH STACK ======== -->
+    <section class="crm-tech-section">
+      <div class="crm-tech-inner reveal">
+        <div class="crm-tech-label">
+          <p>Under the interface is a backend built for real business workflows.</p>
+        </div>
+        <div class="crm-tech-stack">
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>Python</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>Flask</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>SQLAlchemy</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>MySQL</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>JavaScript</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>Gunicorn</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>Nginx</div>
+          <div class="crm-tech-pill"><span class="crm-tech-pill-dot"></span>Multi-tenant SaaS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== WHO IT'S FOR ======== -->
+    <section class="crm-for-section">
+      <div class="crm-for-inner">
+        <div class="crm-for-header reveal">
+          <span class="eyebrow">BUILT FOR</span>
+          <h2>Built for businesses that have outgrown <em>scattered tools.</em></h2>
+        </div>
+        <div class="crm-for-grid">
+          <div class="crm-for-card reveal">
+            <div class="crm-for-num">01</div>
+            <div class="crm-for-title">B2B Businesses</div>
+            <div class="crm-for-desc">Companies that manage multiple customers, contacts and long business relationships.</div>
+          </div>
+          <div class="crm-for-card reveal" style="transition-delay:0.05s">
+            <div class="crm-for-num">02</div>
+            <div class="crm-for-title">Sales Teams</div>
+            <div class="crm-for-desc">Teams that need to track leads, follow up regularly and convert opportunities.</div>
+          </div>
+          <div class="crm-for-card reveal" style="transition-delay:0.1s">
+            <div class="crm-for-num">03</div>
+            <div class="crm-for-title">Project-Based Businesses</div>
+            <div class="crm-for-desc">Businesses where work is organized into distinct projects with deadlines and teams.</div>
+          </div>
+          <div class="crm-for-card reveal" style="transition-delay:0.15s">
+            <div class="crm-for-num">04</div>
+            <div class="crm-for-title">Service Businesses</div>
+            <div class="crm-for-desc">Service providers who send quotations, raise invoices and collect payments regularly.</div>
+          </div>
+          <div class="crm-for-card reveal" style="transition-delay:0.2s">
+            <div class="crm-for-num">05</div>
+            <div class="crm-for-title">Operations Teams</div>
+            <div class="crm-for-desc">Teams managing day-to-day tasks, assignments and business activity tracking.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PHILOSOPHY ======== -->
+    <section class="crm-philosophy-section">
+      <div class="crm-philosophy-inner reveal">
+        <p class="eyebrow" style="text-align:center">PRODUCT PHILOSOPHY</p>
+        <h2 class="crm-philosophy-headline">One CRM.<br><em>One workspace.</em><br>One connected business.</h2>
+        <p class="crm-philosophy-body">GlassEntials CRM is designed around a simple idea: business information becomes more useful when the people, processes and records around it stay connected. A lead that converts into a customer, a customer that becomes a project, a project that produces a quotation — this is how real business actually works. GlassEntials CRM is built around that flow.</p>
+      </div>
+    </section>
+
+    <!-- ======== SECURITY STRIP ======== -->
+    <div class="crm-security-strip">
+      <div class="crm-security-inner reveal">
+        <div class="crm-security-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Secure Authentication
+        </div>
+        <div class="crm-security-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Session Management
+        </div>
+        <div class="crm-security-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Role-Based Permissions
+        </div>
+        <div class="crm-security-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Tenant Data Separation
+        </div>
+        <div class="crm-security-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          99% Uptime
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== DARK STATEMENT ======== -->
+    <section class="crm-dark-section">
+      <div class="crm-dark-inner reveal">
+        <span class="crm-dark-eyebrow">GLASSENTIALS CRM — A MULZON PRODUCT</span>
+        <h2 class="crm-dark-headline">Your business has the data.<br><em>GlassEntials CRM gives it structure.</em></h2>
+        <p class="crm-dark-sub">One connected workspace for the work that keeps your business moving.</p>
+        <a class="btn btn-primary btn-lg" href="https://glassentials.in" target="_blank" rel="noopener">Open GlassEntials CRM ↗</a>
+      </div>
+    </section>
+
+    <!-- ======== FINAL CTA ======== -->
+    <section class="crm-cta-section">
+      <div class="crm-cta-inner reveal">
+        <span class="eyebrow" style="text-align:center">GET STARTED</span>
+        <h2>Ready to bring your business into <em>one workspace?</em></h2>
+        <p>Access the live GlassEntials CRM or talk to the Mulzon team to understand how it can work for your business.</p>
+        <div class="crm-cta-actions">
+          <a class="btn btn-primary btn-lg" href="https://glassentials.in" target="_blank" rel="noopener">Open GlassEntials CRM ↗</a>
+          <a class="btn btn-outline btn-lg" href="contact.html">Talk to Mulzon</a>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ======== FOOTER ======== -->
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-brand">
@@ -136,5 +846,6 @@
 
   <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
   <script src="js/main.js" defer></script>
+  <script src="js/glassentials-crm.js" defer></script>
 </body>
 </html>
